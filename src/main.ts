@@ -1,8 +1,5 @@
 import { createApp } from 'vue'
-import App from './App'
-// import App from './TestApp.vue'
 
-import './base.css'
-import './markdown.css'
+import { HelloWorld } from '../lib'
 
-createApp(App).mount('#app')
+createApp(HelloWorld).mount('#app')

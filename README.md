@@ -1,29 +1,42 @@
-![Coverage](https://img.shields.io/codecov/c/github/pure-vue/router)
-![License](https://img.shields.io/npm/l/@pure-vue/router)
-![Version](https://img.shields.io/npm/v/@pure-vue/router)
+This is a template project for Vue3 lib development.
 
-Declarative routing fro Vue3
+You can just clone this repo, or you can create github repo using this template project.
 
-> [!Note:]
->
-> This project is still under heavy development, the main API may change (mostly add new API) before we reach the
-> stable version which is `1.0.0`. You should decided yourself if using this module in you production project.
+You will have to update `name` in:
 
-# Why another Router Library
+-   rollup.config.js
+-   main.js
+-   package.json
 
-Vue community already had an official router library. So why another one?
+to suit you requirement.
 
-The main reasoin is that we think Vue official is far too conservative. Vue3 contain a great composition API which have much more benefits then option API, but in order to be compatible with Vue2, Vue3 keep the option API and also Vue-Router will do the same thing. This bring some limition of using composition API like _we have to use object to define component_ etc.
+# Commands
 
-In our opinion, option API is a **bad pratice** rather then a **not very good pratice**. So we decided to make some change for Vue3 community. It start with PureVue router, and it really just a start, we will try to do a lot things to improve the quality of Vue3 community in the future.
+### npm run build
 
-See also:
+build the project to
 
--   [Why Jsx is a better choice then SFC](#TODO: url)
--   [The best pratice of Vue3 effects](#TODO: url)
+-   cjs
+-   esm-browser
+-   esm-bundler
+-   global
 
-# Doc menu
+### npm run test
 
--   [Get Start](./docs/en/get-start.md)
--   [Api Reference](./docs/en/api-reference.md)
--   [Examples](./docs/en/example.md)
+run tests using source code in lib
+
+### npm run test:build
+
+run tests using built files (eg. output of `npm run build`)
+
+### npm run test:cov
+
+run tests and generate coverage data
+
+### npm run doc:dev
+
+using `vue-cli-service` to start a develop website which source in `src`
+
+### npm run doc:build
+
+build the website
