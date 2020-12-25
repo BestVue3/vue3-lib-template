@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "rootDir": "lib",
+    "outDir": ".tsc-output",
+    "declaration": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "jest"
+    ],
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__tests__/**/*.ts",
+    "**/__tests__/**/*.tsx"
+  ]
+}
